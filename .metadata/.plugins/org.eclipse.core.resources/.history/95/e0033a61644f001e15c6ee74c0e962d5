@@ -1,0 +1,21 @@
+package entities;
+
+public class OutsourcedEmployee extends Employee{
+	
+	public OutsourcedEmployee () {
+		super();
+	}
+
+	public OutsourcedEmployee(String name, Integer hours, Double valuePerHour) {
+		super(name, hours, valuePerHour);
+	}
+	
+	public double additionalCharge () {
+		double sum = 0;
+		sum += sum * 1.10;
+		return sum;	
+	}
+	
+	
+
+}
